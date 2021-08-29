@@ -211,7 +211,7 @@
     							setTimeout(lo,1)
     						}else{
     							$('.start-anime').hide();
-							$('body').css('background-color','#81c784');
+    							$('body').css('background-color','#81c784');
     							setTimeout(start,600)
     						}
     					}
@@ -231,6 +231,7 @@
 				$('#right-s').css('width','1vw');
 				$('#menu-a').css('width','5vh');
 				$('#menu-b').css('width','5vh');
+				$('#menu-t').css('font-size','3vh');
 				$('.url').hide();
 				$('.url-p').show();
 			}else {
@@ -238,6 +239,7 @@
 				$('#right-s').css('width','0.38vw');
 				$('#menu-a').css('width','2.7vw');
 				$('#menu-b').css('width','2.7vw');
+				$('#menu-t').css('font-size','2.8vw');
 				$('.url').show();
 				$('.url-p').hide();
 			}
@@ -248,9 +250,11 @@
 			$('#t').text("/ おぬどんぬぬっぺ /");
 			$('#menu-b').click(function(){
 				$('#menu').show();
+				$('body').css('background-color','#a5d6a7');
 			})
 			$('#menu-a').click(function(){
 				$('#menu').hide();
+				$('body').css('background-color','#81c784');
 			})
 			let a = 0;
 			const s = () => {
