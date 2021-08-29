@@ -124,23 +124,11 @@
 			position: absolute;
 			top: 1px;
 			left: 1px;
-			width: 2.7vw;
-			height: 2.7vw;
-		}
-		#menu-b:hover{
-			width: 2.8vw;
-			height: 2.8vw;
 		}
 		#menu-a {
 			position: absolute;
 			top: 1px;
 			left: 1px;
-			width: 2.7vw;
-			height: 2.7vw;
-		}
-		#menu-a:hover{
-			width: 2.8vw;
-			height: 2.8vw;
 		}
 		#menu {
 			position: absolute;
@@ -239,11 +227,15 @@
 			if(window.innerHeight > window.innerWidth) {
 				$('#left-s').css('width','1vw');
 				$('#right-s').css('width','1vw');
+				$('#menu-a').css('width','5.7vh');
+				$('#menu-b').css('width','5.7vh');
 				$('.url').hide();
 				$('.url-p').show();
 			}else {
 				$('#left-s').css('width','0.38vw');
 				$('#right-s').css('width','0.38vw');
+				$('#menu-a').css('width','2.7vw');
+				$('#menu-b').css('width','2.7vw');
 				$('.url').show();
 				$('.url-p').hide();
 			}
