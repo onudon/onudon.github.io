@@ -144,6 +144,14 @@
 			font-size: 2.8vw;
 			text-align: center;
 			font-family: 'DotGothic16', sans-serif;
+			margin-bottom: 0;
+		}
+		.menu-a {
+			margin-top: 1vh;
+			margin-bottom: 0;
+			font-size: 2vw;
+			text-align: center;
+			font-family: 'DotGothic16', sans-serif;
 		}
 	</style>
 </head>
@@ -158,12 +166,22 @@
 			<p id="load3">Loading...</p>
 		</div>
 	</div>
-	<div id="all">
-		<img src="img/icon.svg" id="menu-b">
-		<div id="menu">
+	<div id="menu">
 			<img src="img/icon.svg" id="menu-a">
 			<p id="menu-t">/ Menu /</p>
+			<div class="menu-a">
+				<p style="margin:0;">作ったもの</p>
+				<p style="margin:0;">Youtube</p>
+				<p style="margin:0;">Github</p>
+				<p style="margin:0;">Instagram</p>
+				<p style="margin:0;">About</p>
+				<p style="margin:0;">お問い合わせ</p>
+				<p style="margin:0;">RSS</p>
+			</div>
+			<p id="menu-t" style="margin:0;">/ Menu /</p>
 		</div>
+	<div id="all">
+		<img src="img/icon.svg" id="menu-b">
 		<div id="left-s"></div>
 		<div id="right-s"></div>
 		<div class="about">
@@ -173,10 +191,12 @@
 			<div class="url">
 				<a href="https://www.youtube.com/channel/UCBjhnOwpoG7wzR5dQDj02iA">Youtube</a>
 				<a>Instagram</a>
+				<a>Github</a>
 			</div>
 			<div class="url-p">
 				<a href="https://www.youtube.com/channel/UCBjhnOwpoG7wzR5dQDj02iA">Youtube</a>
 				<a>Instagram</a>
+				<a>Github</a>
 			</div>
 		</div>
 	</div>
@@ -233,6 +253,7 @@
 				$('#menu-a').css('width','5vh');
 				$('#menu-b').css('width','5vh');
 				$('#menu-t').css('font-size','3vh');
+				$('.menu-a').css('font-size','2.2vh');
 				$('.url').hide();
 				$('.url-p').show();
 			}else {
@@ -241,6 +262,7 @@
 				$('#menu-a').css('width','2.7vw');
 				$('#menu-b').css('width','2.7vw');
 				$('#menu-t').css('font-size','2.8vw');
+				$('.menu-a').css('font-size','2vw');
 				$('.url').show();
 				$('.url-p').hide();
 			}
@@ -250,10 +272,12 @@
 			$('#all').fadeIn(800);
 			$('#t').text("/ おぬどんぬぬっぺ /");
 			$('#menu-b').click(function(){
+				$('#all').hide();
 				$('#menu').show();
 				$('body').css('background-color','#a5d6a7');
 			})
 			$('#menu-a').click(function(){
+				$('#all').show();
 				$('#menu').hide();
 				$('body').css('background-color','#81c784');
 			})
