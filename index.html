@@ -157,12 +157,20 @@
 			text-decoration: none;
 			color: black;
 		}
+		#skip {
+			position: absolute;
+			top: 0;
+			left: 10px;
+			font-size: 35px;
+			font-family: 'DotGothic16', sans-serif; 
+		}
 	</style>
 </head>
 <body>
 	<div class="start-anime">
 		<div id="start-box"></div>
 		<div id="hide"></div>
+		<div id="skip">skip</div>
 		<div class="load">
 			<p id="load">Loading...</p>
 			<p id="load1">Loading...</p>
@@ -178,6 +186,7 @@
 				<p style="margin:0;"><a href="https://www.youtube.com/channel/UCBjhnOwpoG7wzR5dQDj02iA">Youtube</a></p>
 				<p style="margin:0;"><a href="https://github.com/onudon/">Github</a></p>
 				<p style="margin:0;"><a href="/instagram">Instagram</a></p>
+				<p style="margin:0;"><a href="/patreon">Patreon</a></p>
 				<p style="margin:0;"><a href="/about">About</a></p>
 				<p style="margin:0;"><a href="/contact">お問い合わせ</a></p>
 				<p style="margin:0;"><a href="/rss">RSS</a></p>
@@ -193,24 +202,29 @@
 			<br>
 			<div class="url">
 				<a href="https://www.youtube.com/channel/UCBjhnOwpoG7wzR5dQDj02iA">Youtube</a>
-				<a>Instagram</a>
+				<a href="/instagram">Instagram</a>
 				<a href="https://github.com/onudon/">Github</a>
 			</div>
 			<div class="url-p">
 				<a href="https://www.youtube.com/channel/UCBjhnOwpoG7wzR5dQDj02iA">Youtube</a>
-				<a>Instagram</a>
+				<a href="/instagram">Instagram</a>
 				<a href="https://github.com/onudon/">Github</a>
 			</div>
 		</div>
 	</div>
 	<script type="text/javascript">
+		var check = true;
 		$('#all').hide();
 		$('.load').hide();
 		setInterval(windowsize,1);
+		$('#skip').click(function(){
+			start();
+		})
 		$(function (){
 			$('#t').text("/ ClickBlock /");
 			$('#hide').hide();
-			$('#start-box').click(function(){
+			$('#start-box').click(function (){
+				check = false;
 				$('#hide').show();
 				let count = 0;
 				const anime = () => {
@@ -272,6 +286,8 @@
 		}
 		function start(){
 			$('#start-anime').hide();
+			$('.start-anime').hide();
+			$('body').css('background-color','#81c784');
 			$('#all').fadeIn(800);
 			$('#t').text("/ おぬどんぬぬっぺ /");
 			$('#menu-b').click(function(){
