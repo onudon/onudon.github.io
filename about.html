@@ -19,6 +19,7 @@
 			animation-duration: 2s;
 			animation-iteration-count: 1;
 			background-color: #a5d6a7;
+			font-family: 'DotGothic16', sans-serif;
 		}
 		#spin {
 			display: none;
@@ -61,7 +62,7 @@
 		<header id="header">
 		</header>
 		<main>
-			<h1>About</h1>
+			<h1>Contact</h1>
 		</main>
 		<footer></footer>
 	</div>
@@ -72,6 +73,7 @@
 		function start() {
 			$('#spin').css('display','none');
 			$('#alls').show();
+			$('#t').text("About / おぬどんぬぬっぺ")
 		}
 		var windowtick = () => {
 			let height = window.innerHeight;
