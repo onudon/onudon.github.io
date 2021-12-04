@@ -9,81 +9,18 @@
 	<meta name="msapplication-TileColor" content="#FFFFFF">
 	<link rel="icon" href="img/icon.png">
 	<noscript>
-		<h1 style="text-align: center;">javascriptをオンにしてください！※あやしいわーるどの住民以外は大体オンにしています。</h1>
 	</noscript>
-	<style type="text/css">
-		body {
-			overflow: hidden;
-			margin: 0;
-			animation-name: back;
-			animation-duration: 2s;
-			animation-iteration-count: 1;
-			background-color: #a5d6a7;
-			font-family: 'DotGothic16', sans-serif;
-		}
-		#spin {
-			display: none;
-			position: absolute;
-  			top: calc(50% - 200px);
-  			left: calc(50% - 100px);
-  			width: 200px;
-  			height: 200px;
-  			border-top: 12px solid #fff;
-  			border-right: 12px solid #fff;
-  			border-bottom: 12px solid #fff;
-  			border-left: 12px solid #a5d6a7;
-  			border-radius: 50%;
-  			animation-name: spin;
-  			animation-duration: 1.2s;
-  			animation-iteration-count: infinite;
-  			animation-timing-function: linear;
-		}
-		@keyframes back {
-			from {
-				background-color: #fff;
-			}
-			to {
-				background-color: #a5d6a7;
-			}
-		}
-		@keyframes spin{
-			0% {
-				transform: rotate(0deg);
-			}
-			100% {
-				transform: rotate(360deg);
-			}
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/about.css">
 </head>
 <body>
-	<div id="spin"></div>
-	<div id="alls">
-		<header id="header">
-		</header>
-		<main>
-			<h1>Contact</h1>
-		</main>
-		<footer></footer>
+	<div id="anime">
+		<div id="stick"></div>
+		<div id="cut"></div>
 	</div>
-	<script type="text/javascript">
-		$('#spin').show();
-		$('#alls').hide();
-		setTimeout(start,2200)
-		function start() {
-			$('#spin').css('display','none');
-			$('#alls').show();
-			$('#t').text("About / おぬどんぬぬっぺ")
-		}
-		var windowtick = () => {
-			let height = window.innerHeight;
-			let width = window.innerWidth;
-			if(width > height) {
-			}else {
-			}
-			setInterval(windowtick,1000)	
-		}
-		windowtick();
-	</script>
+	<div id="block" class="title"></div>
+	<div id="alls">
+		<div id="title" class="title">おぬどんぬぬっぺ</div>
+	</div>
+	<script type="text/javascript" src="js/about.js"></script>
 </body>
 </html>
