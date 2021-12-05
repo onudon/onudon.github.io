@@ -62,6 +62,7 @@ body::-webkit-scrollbar {
 }
 #alls{
 	display: none;
+	scrollbar-width: none;
 }
 #block {
 	position: absolute;
@@ -141,7 +142,7 @@ body::-webkit-scrollbar {
 	position: absolute;
 	top: calc(100% + 1px);
 	width: 1px;
-	height: 1px;
+	height: 3px;
 }
 #check-top {
 	position: absolute;

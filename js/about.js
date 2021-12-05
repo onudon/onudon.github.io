@@ -23,6 +23,9 @@ function start(){
 		}else if($(this).scrollTop() > 1) {
 			scroll += 1.2;
 		}
+		if (scroll < 0) {
+			scroll = 0;
+		}
 		let top = 100 - scroll;
 		let opacity = scroll / 100;
 		console.log(scroll);
