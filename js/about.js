@@ -19,9 +19,9 @@ function start(){
 	$('body').css('overflow-y','scroll')
 	$(window).scroll(function (){
 		if ($(this).scrollTop() == 0) {
-			scroll -= 1.2;
+			scroll -= 2;
 		}else if($(this).scrollTop() >= 3) {
-			scroll += 1.2;
+			scroll += 2;
 		}
 		if (scroll < 0) {
 			scroll = 0;
