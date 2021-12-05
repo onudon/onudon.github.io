@@ -18,18 +18,19 @@ function start(){
 	$('#alls').show();
 	$('body').css('overflow-y','scroll')
 	$(window).scroll(function (){
-		if ($(this).scrollTop() == 0 && scroll >= 0) {
+		if ($(this).scrollTop() == 0) {
 			scroll -= 1.2;
-		}else{
+		}else if($(this).scrollTop() > 1) {
 			scroll += 1.2;
 		}
 		let top = 100 - scroll;
 		let opacity = scroll / 100;
-		window.scrollTo(0,1);
+		console.log(scroll);
 		$('#about').css('top',top + 'vh');
 		if (opacity <= 0.8) {
 			$('#opacity').css('opacity',opacity);
 		}
+		window.scrollTo(0,1);
 	})
 }
 $('#bottom').click(function(){
