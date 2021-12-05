@@ -140,7 +140,7 @@ body::-webkit-scrollbar {
 }
 #check {
 	position: absolute;
-	top: calc(100% + 3px);
+	top: 100%;
 	width: 1px;
 	height: 3px;
 }
