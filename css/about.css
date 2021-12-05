@@ -148,7 +148,7 @@ body::-webkit-scrollbar {
 	position: absolute;
 	top: 0;
 	width: 1px;
-	height: 1px;
+	height: 3px;
 }
 #bottom {
 	font-family: 'Orbitron', sans-serif;
