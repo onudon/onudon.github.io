@@ -18,9 +18,9 @@ function start(){
 	$('#alls').show();
 	$('body').css('overflow-y','scroll')
 	$(window).scroll(function (){
-		if ($(this).scrollTop() <= 1) {
+		if ($(this).scrollTop() <= 0) {
 			scroll -= 2;
-		}else if($(this).scrollTop() >= 3) {
+		}else if($(this).scrollTop() >= 2) {
 			scroll += 2;
 		}
 		if (scroll < 0) {
@@ -32,9 +32,8 @@ function start(){
 		$('#about').css('top',top + 'vh');
 		if (opacity <= 0.8) {
 			$('#opacity').css('opacity',opacity);
-			$('#check').css('height',scroll);
 		}
-		window.scrollTo(0,2);
+		window.scrollTo(0,1);
 	})
 }
 $('#bottom').click(function(){

@@ -140,15 +140,15 @@ body::-webkit-scrollbar {
 }
 #check {
 	position: absolute;
-	top: 100vh;
+	top: 100%;
 	width: 1px;
-	height: 3px;
+	height: 10px;
 }
 #check-top {
 	position: absolute;
-	top: -3px;
+	top: -1px;
 	width: 1px;
-	height: 3px;
+	height: 1px;
 }
 #bottom {
 	font-family: 'Orbitron', sans-serif;
