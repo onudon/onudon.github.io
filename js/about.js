@@ -20,7 +20,7 @@ function start(){
 	$(window).scroll(function (){
 		if ($(this).scrollTop() == 0) {
 			scroll -= 1.2;
-		}else if($(this).scrollTop() > 1) {
+		}else if($(this).scrollTop() >= 3) {
 			scroll += 1.2;
 		}
 		if (scroll < 0) {
@@ -33,7 +33,7 @@ function start(){
 		if (opacity <= 0.8) {
 			$('#opacity').css('opacity',opacity);
 		}
-		window.scrollTo(0,1);
+		window.scrollTo(0,2);
 	})
 }
 $('#bottom').click(function(){
