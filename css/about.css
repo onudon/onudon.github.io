@@ -146,9 +146,9 @@ body::-webkit-scrollbar {
 }
 #check-top {
 	position: absolute;
-	top: -1px;
+	top: -10px;
 	width: 1px;
-	height: 1px;
+	height: 10px;
 }
 #bottom {
 	font-family: 'Orbitron', sans-serif;
