@@ -32,6 +32,7 @@ function start(){
 		$('#about').css('top',top + 'vh');
 		if (opacity <= 0.8) {
 			$('#opacity').css('opacity',opacity);
+			$('#check').css('height',scroll);
 		}
 		window.scrollTo(0,2);
 	})
