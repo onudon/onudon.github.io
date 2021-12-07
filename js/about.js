@@ -40,7 +40,7 @@ function start(){
 			if (opacity <= 0.8) {
 				$('#opacity').css('opacity',opacity);
 			}
-			window.scrollTo(0,1);
+			window.scrollTo(0,2);
 		}
 	})
 }
